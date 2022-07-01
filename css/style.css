@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.mask {
+  width: 100%;
+  background-color: rgba(33, 95, 196, 0.6980392157);
+  padding: 100px;
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+#first header {
+  background-image: url(../images/banner-2.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#first header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999999;
+  padding: 20px 0;
+  background-color: rgba(33, 95, 196, 0.5058823529);
+}
+#first header ul {
+  margin: 0 auto;
+}
+#first header ul a {
+  color: white;
+}
+#first header .headerBtn-1 {
+  color: blue;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: white;
+  transition-duration: 0.3s;
+  font-weight: 600;
+}
+#first header .headerBtn-1 i {
+  margin-right: 10px;
+}
+#first header .headerBtn-1:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+#first .firsthWatch {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  #first .firsthWatch .watch-1 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+#first .firsthWatch img {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  #first .firsthWatch img {
+    width: 250px;
+  }
+}
+#first .firsthWatch .login {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  #first .firsthWatch .login {
+    width: 300px;
+  }
+}
+#first .firsthWatch .login input {
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+#first .firsthWatch .login button {
+  background-color: blue;
+  color: white;
+}
+#first .firsthWatch .login h1 {
+  margin-bottom: 20px;
+}
+
+#second .blue {
+  color: blue;
+}
+#second img {
+  width: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  #second img {
+    width: 250px;
+    margin-top: 50px;
+  }
+}
+
+#thirth {
+  background-color: #fafafa;
+  padding: 80px 0;
+}
+#thirth .container {
+  text-align: center;
+}
+#thirth .container .firstp {
+  margin-bottom: 50px;
+}
+#thirth .container .thirthIcon {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#thirth .container .thirthIcon i {
+  font-size: 28px;
+  color: #2273F8;
+}/*# sourceMappingURL=style.css.map */

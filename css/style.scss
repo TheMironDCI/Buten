@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+$mask: #215fc4b2;
+$shadow1: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.mask {
+    width: 100%;
+    background-color: #215fc4b2;
+    padding: 100px;
+}
+section {
+    margin-bottom: 200px;
+}
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+// First section
+#first {
+    header {
+        background-image: url(../images/banner-2.jpg);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 999999;
+            padding: 20px 0;
+            background-color: #215fc481;
+        }
+
+        ul {
+            margin: 0 auto;
+            a {
+                color: white;
+            }
+        }
+        .headerBtn-1 {
+            color: blue;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: white;
+            transition-duration: .3s;
+            font-weight: 600;
+            i {
+                margin-right: 10px;
+            }
+            &:hover {
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+    .firsthWatch {
+        margin-top: 100px;
+        .watch-1 {
+            @include mobile {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+            img {
+                width: 400px;
+                @include mobile {
+                    width: 250px;
+                }
+        }
+        .login {
+            display: flex;
+            flex-flow: column wrap;
+            text-align: center;
+            width: 400px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            @include mobile {
+                width: 300px;
+            }
+            input {
+                padding: 20px 10px;
+                margin-bottom: 20px;
+            }
+            button {
+                background-color: blue;
+                color: white;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+// Second section
+#second {
+    .blue {
+        color: blue;
+    }
+    img {
+        width: 100%;
+        border-radius: 20px;
+        @include mobile {
+            width: 250px;
+            margin-top: 50px;
+        }
+    }
+}
+// Thirth section
+#thirth {
+    background-color: #fafafa;
+    padding: 80px 0;
+    .container {
+        text-align: center;
+        .firstp {
+            margin-bottom: 50px;
+        }
+
+        .thirthIcon {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: $shadow1;
+            i {
+                font-size: 28px;
+                color: #2273F8;
+            }
+        }
+    }
+}
