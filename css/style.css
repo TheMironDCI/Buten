@@ -131,8 +131,116 @@ section {
   border-radius: 50%;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition-duration: 0.3s;
+}
+#thirth .container .thirthIcon:hover {
+  background-color: #2273F8;
+}
+#thirth .container .thirthIcon:hover i {
+  color: white;
 }
 #thirth .container .thirthIcon i {
   font-size: 28px;
   color: #2273F8;
+}
+
+#fourth {
+  background-image: url(../images/video-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  #fourth {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+  }
+}
+#fourth .mask {
+  padding: 200px;
+  text-align: center;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  #fourth .mask {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+  }
+}
+#fourth .mask h2 {
+  color: white;
+  font-weight: 600;
+}
+#fourth .mask p {
+  color: white;
+}
+@media (max-width: 768px) {
+  #fourth .mask p {
+    display: none;
+  }
+}
+#fourth .mask .fourthIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+#fourth .mask .fourthIcon:hover {
+  background-color: rgb(5, 5, 37);
+}
+#fourth .mask .fourthIcon:hover i {
+  color: white;
+}
+#fourth .mask i {
+  font-size: 36px;
+}
+
+#fiveth {
+  text-align: center;
+}
+#fiveth .fivethBox {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  #fiveth .fivethBox {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  #fiveth .fiveOn {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+#fiveth .fivethP {
+  margin-bottom: 50px;
+}
+#fiveth .fivethIcon {
+  text-align: center;
+  margin: 0 auto;
+}
+#fiveth .fivethIcon i {
+  margin-right: 10px;
+  color: #2273F8;
+}
+#fiveth h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#fiveth img {
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */
