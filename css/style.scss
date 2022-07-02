@@ -222,7 +222,20 @@ section {
             margin: 0 auto;
         }
     }
-
+    .imgBoxFive {
+        display: flex;
+        img {
+            width: 400px;
+            @include mobile {
+                width: 200px;
+                margin-top: 30px;
+            }
+        }
+        @include mobile {
+            width: 100%;
+            justify-content: center;
+        }
+    }
     .fivethP {
         margin-bottom: 50px;
     }
@@ -241,5 +254,55 @@ section {
     }
     img {
         width: 300px;
+    }
+}
+// Sixth section
+#sixth {
+    .container {
+        text-align: center;
+    }
+    .row {
+        text-align: left;
+        margin-top: 50px;
+        img {
+            width: 400px;
+            @include mobile {
+                width: 200px;
+
+            }
+        }
+        .imgBoxSix {
+            // width: 100%;
+            display: flex;
+            justify-content: center;
+    }
+
+        .sixthIcon {
+            margin-right: 30px;
+            border: dashed #2273F8;
+            width: 245px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            border-radius: 50%;
+            i {
+                color: #2273F8;
+            }
+        }
+    }
+    
+}
+// Seventh section
+#seventh {
+    background-image: url(../images/newsletter-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    .container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 20px;
     }
 }

@@ -226,6 +226,24 @@ section {
     margin: 0 auto;
   }
 }
+#fiveth .imgBoxFive {
+  display: flex;
+}
+#fiveth .imgBoxFive img {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  #fiveth .imgBoxFive img {
+    width: 200px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #fiveth .imgBoxFive {
+    width: 100%;
+    justify-content: center;
+  }
+}
 #fiveth .fivethP {
   margin-bottom: 50px;
 }
@@ -243,4 +261,50 @@ section {
 }
 #fiveth img {
   width: 300px;
+}
+
+#sixth .container {
+  text-align: center;
+}
+#sixth .row {
+  text-align: left;
+  margin-top: 50px;
+}
+#sixth .row img {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  #sixth .row img {
+    width: 200px;
+  }
+}
+#sixth .row .imgBoxSix {
+  display: flex;
+  justify-content: center;
+}
+#sixth .row .sixthIcon {
+  margin-right: 30px;
+  border: dashed #2273F8;
+  width: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border-radius: 50%;
+}
+#sixth .row .sixthIcon i {
+  color: #2273F8;
+}
+
+#seventh {
+  background-image: url(../images/newsletter-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#seventh .container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
