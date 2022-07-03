@@ -294,17 +294,156 @@ section {
 }
 #sixth .row .sixthIcon i {
   color: #2273F8;
+  font-size: 28px;
 }
 
-#seventh {
-  background-image: url(../images/newsletter-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
 #seventh .container {
   background-color: white;
   padding: 40px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (max-width: 768px) {
+  #seventh .container {
+    width: 100% !important;
+  }
+}
+#seventh .container .onput {
+  position: relative;
+}
+@media (max-width: 768px) {
+  #seventh .container .onput {
+    display: block;
+  }
+}
+#seventh .container .submt {
+  position: absolute;
+  right: 10px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #2273F8;
+  color: white;
+  font-weight: 500;
+}
+#seventh .container input {
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (max-width: 768px) {
+  #seventh .container input {
+    width: 250px;
+  }
+}
+
+#eight .container {
+  text-align: center;
+}
+#eight .container .row {
+  text-align: center;
+}
+#eight .container .row .eightBox {
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  margin: 30px;
+}
+@media (max-width: 768px) {
+  #eight .container .row .eightBox {
+    margin: 20px 0;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #eight .container .row .eightBox img {
+    width: 200px;
+  }
+}
+#eight .container .row .eightBox h3 {
+  margin: 20px 0;
+}
+#eight .container .row .eightBox h4 {
+  margin-bottom: 20px;
+  color: #2273F8;
+}
+#eight .container button {
+  background-color: #2273F8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  font-weight: 600;
+}
+#eight .container button:hover {
+  background-color: transparent;
+  color: #2273F8;
+  border: 1px solid white;
+}
+
+#nine {
+  background-image: url(../images/banner-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#nine .container {
+  padding: 100px 0;
+  width: 600px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  #nine .container {
+    width: 100%;
+  }
+}
+#nine .container h1 {
+  margin-bottom: 30px;
+}
+#nine .container .nineIcon i {
+  color: gold;
+}
+#nine .container img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+
+#ten .container {
+  text-align: center;
+}
+#ten .container .row {
+  margin-top: 80px;
+}
+#ten .container img {
+  width: 300px;
+  margin-left: 300px;
+}
+@media (max-width: 768px) {
+  #ten .container img {
+    margin: 30px 0;
+    width: 250px;
+  }
+}
+#ten .container button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-duration: 0.3s;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+#ten .container button:hover {
+  background-color: #2273F8;
+  color: white;
+}
+@media (max-width: 768px) {
+  #ten .container button i {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
