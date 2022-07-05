@@ -292,6 +292,11 @@ section {
   height: 100px;
   border-radius: 50%;
 }
+@media (max-width: 768px) {
+  #sixth .row .sixthIcon {
+    border: none;
+  }
+}
 #sixth .row .sixthIcon i {
   color: #2273F8;
   font-size: 28px;
@@ -419,7 +424,6 @@ section {
 }
 #ten .container img {
   width: 300px;
-  margin-left: 300px;
 }
 @media (max-width: 768px) {
   #ten .container img {
@@ -446,4 +450,93 @@ section {
   #ten .container button i {
     margin: 0;
   }
+}
+
+#eleven {
+  background-image: url(../images/map.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 100px;
+}
+@media (max-width: 768px) {
+  #eleven {
+    padding: 0;
+  }
+}
+#eleven .elevenRow {
+  margin-top: 50px;
+}
+#eleven input {
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#eleven .nimi {
+  margin-top: 20px;
+  height: 150px;
+}
+#eleven .elevenProblem button {
+  margin-top: 20px;
+  width: 100px;
+  background-color: #2273F8;
+  color: white;
+}
+@media (max-width: 768px) {
+  #eleven .elevenProblem {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+#eleven .minion {
+  padding: 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #eleven .minion {
+    width: 100% !important;
+  }
+}
+#eleven .minies {
+  height: 50px;
+  width: 45%;
+}
+@media (max-width: 768px) {
+  #eleven .minies {
+    width: 100% !important;
+    margin: 20px 0;
+  }
+}
+#eleven .elevenMiniBox {
+  margin-bottom: 20px;
+}
+#eleven .elevenIcon {
+  border: 1px solid #2273F8;
+  padding: 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#eleven .elevenIcon i {
+  color: #2273F8;
+  font-size: 24px;
+}
+
+#twelve {
+  background-color: black;
+  padding: 50px 0;
+  color: white;
+  height: auto;
+}
+#twelve .footerBox {
+  margin: 0 auto;
+  text-align: center;
+}
+#twelve .footerBox .lastIcon {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2273F8;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

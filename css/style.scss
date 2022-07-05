@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
 $mask: #215fc4b2;
 $shadow1: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 .mask {
     width: 100%;
     background-color: #215fc4b2;
     padding: 100px;
 }
+
 section {
     margin-bottom: 200px;
 }
+
 @mixin mobile {
     @media (max-width: 768px) {
         @content;
     }
 }
+
 // First section
 #first {
     header {
@@ -27,7 +33,8 @@ section {
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center; 
+        background-position: center;
+
         nav {
             position: fixed;
             top: 0;
@@ -41,10 +48,12 @@ section {
 
         ul {
             margin: 0 auto;
+
             a {
                 color: white;
             }
         }
+
         .headerBtn-1 {
             color: blue;
             padding: 10px 20px;
@@ -52,9 +61,11 @@ section {
             background-color: white;
             transition-duration: .3s;
             font-weight: 600;
+
             i {
                 margin-right: 10px;
             }
+
             &:hover {
                 background-color: transparent;
                 color: white;
@@ -62,8 +73,10 @@ section {
             }
         }
     }
+
     .firsthWatch {
         margin-top: 100px;
+
         .watch-1 {
             @include mobile {
                 width: 100%;
@@ -72,12 +85,15 @@ section {
                 justify-content: center;
             }
         }
-            img {
-                width: 400px;
-                @include mobile {
-                    width: 250px;
-                }
+
+        img {
+            width: 400px;
+
+            @include mobile {
+                width: 250px;
+            }
         }
+
         .login {
             display: flex;
             flex-flow: column wrap;
@@ -86,43 +102,53 @@ section {
             background-color: white;
             padding: 30px;
             border-radius: 10px;
+
             @include mobile {
                 width: 300px;
             }
+
             input {
                 padding: 20px 10px;
                 margin-bottom: 20px;
             }
+
             button {
                 background-color: blue;
                 color: white;
             }
+
             h1 {
                 margin-bottom: 20px;
             }
         }
     }
 }
+
 // Second section
 #second {
     .blue {
         color: blue;
     }
+
     img {
         width: 100%;
         border-radius: 20px;
+
         @include mobile {
             width: 250px;
             margin-top: 50px;
         }
     }
 }
+
 // Thirth section
 #thirth {
     background-color: #fafafa;
     padding: 80px 0;
+
     .container {
         text-align: center;
+
         .firstp {
             margin-bottom: 50px;
         }
@@ -135,12 +161,15 @@ section {
             margin: 0 auto;
             box-shadow: $shadow1;
             transition-duration: .3s;
+
             &:hover {
                 background-color: #2273F8;
             }
+
             &:hover i {
                 color: white;
             }
+
             i {
                 font-size: 28px;
                 color: #2273F8;
@@ -148,39 +177,47 @@ section {
         }
     }
 }
+
 // Fourth section
 #fourth {
     background-image: url(../images/video-bg.jpg);
     background-size: cover;
     background-position: center;
+
     @include mobile {
         width: 300px;
         margin: 0 auto;
         border-radius: 20px;
         margin-bottom: 100px;
     }
+
     .mask {
         padding: 200px;
         text-align: center;
         border-radius: 20px;
+
         @include mobile {
             width: 300px;
             height: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0  !important;
+            padding: 0 !important;
         }
+
         h2 {
             color: white;
             font-weight: 600;
         }
+
         p {
             color: white;
+
             @include mobile {
                 display: none;
             }
         }
+
         .fourthIcon {
             width: 100px;
             height: 100px;
@@ -192,56 +229,70 @@ section {
             background-color: white;
             cursor: pointer;
             transition-duration: .3s;
+
             &:hover {
                 background-color: rgb(5, 5, 37);
             }
+
             &:hover i {
                 color: white;
             }
         }
+
         i {
             font-size: 36px;
         }
     }
 }
+
 // Fiveth section 
 #fiveth {
     text-align: center;
+
     .fivethBox {
         padding: 30px;
         box-shadow: $shadow1;
         border-radius: 20px;
         margin: 10px;
+
         @include mobile {
             margin: 20px 0;
         }
     }
+
     .fiveOn {
         @include mobile {
             width: 100%;
             margin: 0 auto;
         }
     }
+
     .imgBoxFive {
         display: flex;
+
         img {
             width: 400px;
+
             @include mobile {
                 width: 200px;
                 margin-top: 30px;
             }
         }
+
         @include mobile {
             width: 100%;
             justify-content: center;
         }
     }
+
     .fivethP {
         margin-bottom: 50px;
     }
+
     .fivethIcon {
         text-align: center;
         margin: 0 auto;
+
         i {
             margin-right: 10px;
             color: #2273F8;
@@ -252,30 +303,36 @@ section {
         margin-bottom: 20px;
         font-weight: 700;
     }
+
     img {
         width: 300px;
     }
 }
+
 // Sixth section
 #sixth {
     .container {
         text-align: center;
     }
+
     .row {
         text-align: left;
         margin-top: 50px;
+
         img {
             width: 400px;
+
             @include mobile {
                 width: 200px;
 
             }
         }
+
         .imgBoxSix {
             // width: 100%;
             display: flex;
             justify-content: center;
-    }
+        }
 
         .sixthIcon {
             margin-right: 30px;
@@ -286,16 +343,22 @@ section {
             justify-content: center;
             height: 100px;
             border-radius: 50%;
+            @include mobile {
+                border: none;
+            }
+
             i {
                 color: #2273F8;
                 font-size: 28px;
             }
         }
     }
-    
+
 }
+
 // Seventh section
 #seventh {
+
     // background-image: url(../images/newsletter-bg.jpg);
     // background-size: cover;
     // background-position: center;
@@ -306,15 +369,19 @@ section {
         padding: 40px;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
         @include mobile {
             width: 100% !important;
         }
+
         .onput {
             position: relative;
+
             @include mobile {
                 display: block;
             }
         }
+
         .submt {
             position: absolute;
             right: 10px;
@@ -324,6 +391,7 @@ section {
             color: white;
             font-weight: 500;
         }
+
         input {
             border-radius: 30px;
             width: 100%;
@@ -331,42 +399,50 @@ section {
             padding: 0 10px;
             border: none;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
             @include mobile {
                 width: 250px;
             }
         }
     }
 }
+
 // Eight section
 #eight {
     .container {
         text-align: center;
+
         .row {
             text-align: center;
-            
+
             .eightBox {
                 padding: 30px;
                 background-color: #fafafa;
                 border-radius: 20px;
                 margin: 30px;
+
                 @include mobile {
                     margin: 20px 0;
                     align-items: center;
                 }
+
                 img {
                     @include mobile {
                         width: 200px;
                     }
                 }
+
                 h3 {
                     margin: 20px 0;
                 }
+
                 h4 {
                     margin-bottom: 20px;
                     color: #2273F8;
                 }
             }
         }
+
         button {
             background-color: #2273F8;
             color: white;
@@ -374,6 +450,7 @@ section {
             border-radius: 50px;
             transition-duration: .3s;
             font-weight: 600;
+
             &:hover {
                 background-color: transparent;
                 color: #2273F8;
@@ -382,27 +459,33 @@ section {
         }
     }
 }
+
 // Nine section 
 #nine {
     background-image: url(../images/banner-1.jpg);
     background-position: center;
     background-size: cover;
+
     .container {
         padding: 100px 0;
         width: 600px;
         text-align: center;
         color: white;
+
         @include mobile {
             width: 100%;
         }
+
         h1 {
             margin-bottom: 30px;
         }
+
         .nineIcon {
             i {
                 color: gold;
             }
         }
+
         img {
             width: 100px;
             border-radius: 50%;
@@ -410,40 +493,139 @@ section {
         }
     }
 }
+
 // Ten section
 #ten {
     .container {
         text-align: center;
+
         .row {
             margin-top: 80px;
         }
+
         img {
             width: 300px;
-            margin-left: 300px;
+
             @include mobile {
                 margin: 30px 0;
                 width: 250px;
             }
         }
+
         button {
             width: 100%;
             padding: 20px;
             border-radius: 10px;
             text-align: left;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             transition-duration: .3s;
             font-weight: 600;
             display: flex;
             justify-content: space-between;
+
             &:hover {
                 background-color: #2273F8;
                 color: white;
             }
-             i {
+
+            i {
                 @include mobile {
                     margin: 0;
                 }
             }
+        }
+    }
+}
+
+// Eleven section
+#eleven {
+    background-image: url(../images/map.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px;
+
+    @include mobile {
+        padding: 0;
+    }
+    .elevenRow {
+        margin-top: 50px;
+    }
+
+    input {
+        padding: 5px;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: $shadow1;
+    }
+
+    .nimi {
+        margin-top: 20px;
+        height: 150px;
+    }
+    .elevenProblem {
+        button {
+            margin-top: 20px;
+            width: 100px;
+            background-color: #2273F8;
+            color: white;
+        }
+        @include mobile {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
+
+    .minion {
+        padding: 0;
+        margin-bottom: 20px;
+        @include mobile {
+            width: 100% !important;
+        }
+    }
+
+    .minies {
+        height: 50px;
+        width: 45%;
+
+        @include mobile {
+            width: 100% !important;
+            margin: 20px 0;
+        }
+    }
+
+    .elevenMiniBox {
+        margin-bottom: 20px;
+    }
+
+    .elevenIcon {
+        border: 1px solid #2273F8;
+        padding: 25px;
+        border-radius: 10px;
+        margin-right: 10px;
+
+        i {
+            color: #2273F8;
+            font-size: 24px;
+        }
+    }
+}
+// Twelve section {
+#twelve {
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    height: auto;
+    .footerBox {
+        margin: 0 auto;
+        text-align: center ;
+        .lastIcon {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #2273F8;
+            text-align: center;
         }
     }
 }
